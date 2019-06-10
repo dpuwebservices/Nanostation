@@ -4,19 +4,20 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Loop Library Hours</title>
+  <title>Loop Library Information</title>
 
   <style>
     @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic%7COpen+Sans+Condensed:300,700,300italic");    
     body{
-      padding: 0 10px;
       text-align: left;
         font-family:"Open Sans Condensed",sans-serif;
-    }    
-    h1{
-        font-size:20px;
-        font-weight:bold;
-    }    
+    }   
+    #main{
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+  
   </style>
 
 </head>
@@ -26,8 +27,12 @@
   <h1>Today's Hours:</h1>
   <div id="api_hours_today_iid123_lid2438"></div>
   <script src="https://api3.libcal.com/api_hours_today.php?iid=123&lid=2438&format=js&systemTime=0&context=object"> </script>
+  
+  <h2>Room Reservations</h2>
 
 
+  <h2>Instruction Sessions</h2>
+<div id="api_upc_cid2894_iid123"></div><script type="text/javascript" src="https://api3.libcal.com/api_events.php?iid=123&m=upc&cid=2894&audience=&c=1652&d=23632&l=3&simple=ul_date&context=object&format=js"> </script>
   </div>
 </body>
 </html>
