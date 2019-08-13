@@ -8,23 +8,30 @@
 
   <style>
     @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic%7COpen+Sans+Condensed:300,700,300italic");    
-    body{
-      text-align: left;
-        font-family:"Open Sans Condensed",sans-serif;
-      font-size: 12pt;
+    body, html{
+
+      font-family:"Open Sans Condensed",sans-serif;
+      font-size: 1em;
+      background: #2B4F78;
+      color:white;
+      text-align:left;
+      overflow:hidden;
     }   
+    a {color:white; text-decoration: none;}
     #main{
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 0 10px;
+      max-width: 90%;
+      margin:0 auto;
     }
+    
+    table {width: 360px;    margin-left:auto;     margin-right:auto; text-align:left;}
     table th{
       font-weight: normal;
       padding-right:10px;
     }
-    .hours-alt.hours-today-row.hours-library.loc2438 th, .hours-alt.hours-today-row.hours-library.loc2438 td {
+/*    .hours-alt.hours-today-row.hours-library.loc2438 th, .hours-alt.hours-today-row.hours-library.loc2438 td {
       padding-bottom: 10px;
-    }
+    }*/
+    .hours-today{font-size: 1.2em;}
     .hours-alt.hours-today-row.hours-library.loc2438 th{
       font-weight:bold;
     }
@@ -38,11 +45,19 @@ $todaysDate=date("l, F jS");
 ?>
 <body>
   <div id="main">
-  <h1><?php echo $todaysDate; ?></h1>
-  <h2>Today's Hours:</h2>
-  <div id="api_hours_today_iid123_lid2438"></div>
+
+    
+    <table>
+       <tr><td><h1><?php echo $todaysDate; ?></h1></td></tr>
+      <tr><td>  <h2>Today's Hours:</h2></td></tr>
+      <tr><td>  <div id="api_hours_today_iid123_lid2438"></div></td></tr>
+      <tr><td><div id="api_hours_today_iid123_lid6256"></div></td></tr>
+    </table>
+  
+
+
   <script src="https://api3.libcal.com/api_hours_today.php?iid=123&lid=2438&format=js&systemTime=0&context=object"> </script>
-  <div id="api_hours_today_iid123_lid6256"></div><script src="https://api3.libcal.com/api_hours_today.php?iid=123&lid=6256&format=js&systemTime=0&context=object"> </script>
+  <script src="https://api3.libcal.com/api_hours_today.php?iid=123&lid=6256&format=js&systemTime=0&context=object"> </script>
   </div>
 <!--  <h2>Room Reservations</h2>
 
