@@ -11,30 +11,33 @@
     body, html{
 
       font-family:"Open Sans Condensed",sans-serif;
-      font-size: 1em;
+      font-size: 1.1em;
       background: #2B4F78;
       color:white;
       text-align:left;
       overflow:hidden;
-    }   
+    }
+    
     a {color:white; text-decoration: none;}
     #main{
       max-width: 90%;
+      padding:6% 0 4% 0;
       margin:0 auto;
     }
     
-    table {width: 360px;    margin-left:auto;     margin-right:auto; text-align:left;}
+    table {width: 100%;    margin:0 auto; text-align:left;}
     table th{
       font-weight: normal;
-      padding-right:10px;
+
     }
 /*    .hours-alt.hours-today-row.hours-library.loc2438 th, .hours-alt.hours-today-row.hours-library.loc2438 td {
       padding-bottom: 10px;
     }*/
-    .hours-today{font-size: 1.2em;}
-    .hours-alt.hours-today-row.hours-library.loc2438 th{
+    .loc2438{
+      font-size:1.8em;
       font-weight:bold;
     }
+    
 
   </style>
 
@@ -48,16 +51,16 @@ $todaysDate=date("l, F jS");
 
     
     <table>
-       <tr><td><h1><?php echo $todaysDate; ?></h1></td></tr>
-      <tr><td>  <h2>Today's Hours:</h2></td></tr>
-      <tr><td>  <div id="api_hours_today_iid123_lid2438"></div></td></tr>
-      <tr><td><div id="api_hours_today_iid123_lid6256"></div></td></tr>
+      <tr><td><strong><?php echo $todaysDate; ?></strong></td></tr>
+      <tr><td>
+          <p>Today's Hours:</p>
+          <div id="api_hours_today_iid123_lid2438"></div>
+        </td></tr>
     </table>
   
 
 
   <script src="https://api3.libcal.com/api_hours_today.php?iid=123&lid=2438&format=js&systemTime=0&context=object"> </script>
-  <script src="https://api3.libcal.com/api_hours_today.php?iid=123&lid=6256&format=js&systemTime=0&context=object"> </script>
   </div>
 <!--  <h2>Room Reservations</h2>
 
