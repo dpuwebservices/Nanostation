@@ -12,7 +12,7 @@
 
       font-family:"Open Sans Condensed",sans-serif;
       font-size: 1.1em;
-      background: #2B4F78;
+      background: #161a55;
       color:white;
       text-align:left;
       overflow:hidden;
