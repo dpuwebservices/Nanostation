@@ -11,8 +11,8 @@
     body, html{
 
       font-family:"Open Sans Condensed",sans-serif;
-      font-size: 1.1em;
       background: #161a55;
+/*      background: red;*/
       color:white;
       text-align:left;
       overflow:hidden;
@@ -20,8 +20,8 @@
     
     a {color:white; text-decoration: none;}
     #main{
-      max-width: 90%;
-      padding:6% 0 4% 0;
+      max-width: 100%;
+      padding:4%;
       margin:0 auto;
     }
     
@@ -38,6 +38,11 @@
       font-weight:bold;
     }
     
+    tr.dep2440, th.hours-col-loc{display:none;}
+    
+    .date{font-size: 2em;}
+    .hours{font-size: 1.8em;}
+    
 
   </style>
 
@@ -53,8 +58,8 @@ $todaysDate=date("l, M. jS");
     <table>
       <tr><td class="date"><?php echo $todaysDate; ?></td></tr>
       <tr><td>
-          <p>Today's Hours:</p>
-          <div id="api_hours_today_iid123_lid2438"></div>
+          <h2>Today's Hours:</h2>
+          <div class="hours" id="api_hours_today_iid123_lid2438"></div>
         </td></tr>
     </table>
   
