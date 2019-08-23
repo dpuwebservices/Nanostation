@@ -44,14 +44,14 @@
 </head>
 <?php 
 date_default_timezone_set('America/Chicago');
-$todaysDate=date("l, F jS");
+$todaysDate=date("l, M. jS");
 ?>
 <body>
   <div id="main">
 
     
     <table>
-      <tr><td><strong><?php echo $todaysDate; ?></strong></td></tr>
+      <tr><td class="date"><?php echo $todaysDate; ?></td></tr>
       <tr><td>
           <p>Today's Hours:</p>
           <div id="api_hours_today_iid123_lid2438"></div>
@@ -62,11 +62,6 @@ $todaysDate=date("l, F jS");
 
   <script src="https://api3.libcal.com/api_hours_today.php?iid=123&lid=2438&format=js&systemTime=0&context=object"> </script>
   </div>
-<!--  <h2>Room Reservations</h2>
 
-
-  <h2>Instruction Sessions</h2>
-<div id="api_upc_cid2894_iid123"></div><script type="text/javascript" src="https://api3.libcal.com/api_events.php?iid=123&m=upc&cid=2894&audience=&c=1652&d=23632&l=3&simple=ul_date&context=object&format=js"> </script>
-  </div>-->
 </body>
 </html>
