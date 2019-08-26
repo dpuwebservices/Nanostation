@@ -21,11 +21,11 @@
     a {color:white; text-decoration: none;}
     #main{
       max-width: 100%;
-      padding:4%;
+      padding:2%;
       margin:0 auto;
     }
     
-    table {width: 100%;    margin:0 auto; text-align:left;}
+    table {max-width: 100%;    margin:0 auto; text-align:left;}
     table th{
       font-weight: normal;
 
