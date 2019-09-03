@@ -11,7 +11,7 @@
     body, html{
 
       font-family:"Open Sans Condensed",sans-serif;
-      background: #161a55;
+      background: #000000;
 /*      background: red;*/
       color:white;
       text-align:left;
